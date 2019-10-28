@@ -6,7 +6,7 @@ services:
     volumes:
       - ./:/go/src/github.com/tomekwlod/tes
       # - $GOPATH/pkg/mod/cache:/go/pkg/mod/cache
-    working_dir: /go/src/github.com/tomekwlod/tes
+    # working_dir: /go/src/github.com/tomekwlod/tes
     env_file:
       - .env
 
