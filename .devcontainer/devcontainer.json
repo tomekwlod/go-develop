@@ -1,0 +1,10 @@
+{
+    "dockerComposeFile": "docker-compose.yml",
+    "extensions": [
+        "ms-vscode.go"
+    ],
+    "service": "server",
+    "appPort": [
+        "8000:8000"
+    ]
+}

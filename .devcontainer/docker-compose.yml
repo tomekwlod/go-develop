@@ -1,0 +1,12 @@
+version: '3'
+services:
+
+  server:
+    build:
+      context: ../
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      - ../:/go/src/github.com/tomekwlod/tes
+    env_file:
+      - .env
+    command: sleep infinity
