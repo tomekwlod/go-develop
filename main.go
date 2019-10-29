@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
-	"github.com/tomekwlod/tes/quote"
+	"github.com/tomekwlod/go-develop/module"
 )
 
 func main() {
-	fmt.Println("hello mate")
+	fmt.Println("Hello from main package")
 
-	quote.Dosomething()
+	module.Printsomething()
 }

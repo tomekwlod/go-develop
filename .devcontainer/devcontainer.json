@@ -3,7 +3,7 @@
     "extensions": [
         "ms-vscode.go"
     ],
-    "service": "server",
+    "service": "develop",
     "appPort": [
         "8000:8000"
     ]

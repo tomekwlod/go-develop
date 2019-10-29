@@ -1,19 +1,18 @@
 version: "3"
 
 services:
-  server:
+  develop:
     container_name: develop
     build:
       context: ../
       dockerfile: .devcontainer/Dockerfile
     volumes:
-      - ../:/go/src/github.com/tomekwlod/tes
+      - ../:/go/src/github.com/tomekwlod/go-develop
       # I am not sure about the below https://evilmartians.com/chronicles/speeding-up-go-modules-for-docker-and-ci
       - go-modules:/go/pkg/mod # Put modules cache into a separate volume
     env_file:
       - .env
     command: sleep infinity
-    
 
 volumes:
   go-modules: # Define the volume

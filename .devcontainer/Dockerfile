@@ -1,6 +1,6 @@
 FROM golang:1.13-stretch
 
-WORKDIR /go/src/github.com/tomekwlod/tes
+WORKDIR /go/src/github.com/tomekwlod/go-develop
 COPY . .
 
 # Configure to reduce warnings and limitations as instruction from official VSCode Remote-Containers.
