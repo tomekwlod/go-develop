@@ -13,10 +13,9 @@ RUN apt-get update \
 
 
 # Install Go tools.
-RUN apt-get update \
+RUN go get -x -d github.com/stamblerre/gocode 2>&1 \
     # Install gocode-gomod.
     # && git config --global url."https://9d0c27e923db5b2aca7b8604703e5d6e6f6940ac:@github.com/".insteadOf "https://github.com/" \
-    && go get -x -d github.com/stamblerre/gocode 2>&1 \
     && go build -o gocode-gomod github.com/stamblerre/gocode \
     && mv gocode-gomod $GOPATH/bin/ \
     # Install other tools.
